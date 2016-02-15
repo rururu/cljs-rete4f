@@ -1,0 +1,17 @@
+(ns facts)
+
+(def FACTS '(
+(monkey location t5-7 on-top-of green-couch holding blank)
+(thing name green-couch location t5-7 weight heavy on-top-of floor)
+(thing name red-couch location t2-2 weight heavy on-top-of floor)
+(thing name big-pillow location t2-2 on-top-of red-couch weight light)
+(thing name red-chest location t2-2 on-top-of big-pillow weight light)
+(chest name red-chest contents ladder unlocked-by red-key)
+(thing name blue-chest location t7-7 on-top-of ceiling weight light)
+(chest name blue-chest contents bananas unlocked-by blue-key)
+(thing name blue-couch location t8-8 weight heavy on-top-of floor)
+(thing name green-chest location t8-8 on-top-of ceiling weight light)
+(chest name green-chest contents blue-key unlocked-by red-key)
+(thing name red-key location t1-3 on-top-of floor weight light)
+(goal-is-to action eat argument1 bananas)
+              ))
