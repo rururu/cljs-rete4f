@@ -774,15 +774,15 @@
   (def TRACE nil))
 
 (defn trans-asser [x vars]
-  (cons 'es.core/asser (qq (rest x) vars)))
+  (cons 'cljs-rete4f.core/asser (qq (rest x) vars)))
 
 (defn trans-retract [x mp]
-  (cons 'es.core/retract
+  (cons 'cljs-rete4f.core/retract
         (cons '?fids
                (map #(mp %) (rest x)) ) ))
 
 (defn trans-modify [x vars mp]
-  (cons 'es.core/modify
+  (cons 'cljs-rete4f.core/modify
         (cons '?fids
                 (cons (mp (first (rest x)))
                       (qq (nnext x) vars)) ) ))
