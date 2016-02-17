@@ -1,0 +1,12 @@
+(ns templates)
+
+(def TEMPLATES '((have checked)
+                 (asked question)
+                 (received answer)
+                 (working-state engine)
+                 (spark-state engine)
+                 (charge-state battery)
+                 (rotation-state engine)
+                 (symptom engine)
+                 (repair advice)
+                 (stage value)))
